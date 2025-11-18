@@ -182,8 +182,6 @@ class LyricsFindApp {
         }
 
         try {
-            animationManager.showToast('Loading lyrics...', 'success');
-            
             const data = await lyricsAPI.fetchLyrics(title, artist);
             
             if (!data || !data.lyrics) {
